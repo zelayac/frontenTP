@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- vuetify -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./css/material-design.css" rel="stylesheet">
+    <link href="./css/vuetify.css" rel="stylesheet">
+
+    <title>Tienda de deportes</title>
+</head>
+<body>
+    <div id="app">
+      <v-app>
+        <v-app-bar height="150">
+          <v-row align="center">
+            <v-col cols="1" align-self="center">
+              <v-img
+                src="./assets/logo2.png"
+              ></v-img>
+            </v-col>
+            <v-col cols="10" align-slef="center">
+              <v-row justify="end" class="pr-4">
+                <v-btn text color="red" to="/#carousel">
+                  <v-icon left>home</v-icon>
+                  Home
+                </v-btn>
+                <v-btn text color="red" to="/#carousel">
+                  <v-icon left>payment </v-icon> 
+                  Productos
+                </v-btn>
+                <v-btn text color="red" to="/#carousel">
+                  <v-icon left>contacts</v-icon>
+                  Contacto
+                </v-btn>
+                <v-btn text color="red" to="/#carousel">
+                  <v-icon left> domain</v-icon> 
+                  Nosotros
+                </v-btn>
+              </v-row>
+            </v-col>
+          </v-row>
+        </v-app-bar>
+        <v-main>  
+    
+        <v-container fluid>
+          <v-banner>
+            <v-img src="./assets/banner.jpg">
+              <v-card style="background-color: rgba(0,0,0,0)" elevation="0">
+                <v-card-title class="white--text">Temporada Otoño 2023</v-card-title>
+                <v-card-text class="white--text">Obtene un 15% en la segunda unidad en indumentaria.</v-card-text>
+              </v-card>
+            </v-img>
+          </v-banner>
+        </v-container>
+    
+        <!-- CARROUSEL1 -->
+     <v-carousel>
+
+        <v-carousel-item>
+            <v-img src="	https://www.reasonwhy.es/media/library/aumento_valor_marcas_ropa_deportiva.jpg"></v-img>
+        </v-carousel-item>
+
+        <v-carousel-item>
+          <v-img  src="https://golsmedia.com/wp-content/uploads/2020/03/Balon-de-futbol.jpg"></v-img>
+        </v-carousel-item>
+    
+        <v-carousel-item>
+          <v-img src="https://marcadegol.com/fotos//2019/04/adidas-futurecraft-loop-header.jpg"></v-img>
+        </v-carousel-item>
+
+    </v-carousel>
+    <!-- CARROUSEL1 -->
+
+    
+  </v-main>
+  <v-footer>
+    <v-col cols="5" align-slef="center"></v-col>
+    <v-btn> 
+      <v-icon>email</v-icon>
+    </v-btn>
+    <v-btn> 
+      <v-icon>group</v-icon>
+    </v-btn>
+    <v-btn> 
+      <v-icon>map</v-icon>
+    </v-btn>
+  </v-footer>
+      </v-app>
+    </div>
+  </v-col>
+  
+      <script src="./vue//vue.js"></script>
+      <script src="./vue/vuetify.js"></script>
+      <script>
+        new Vue({
+          el: '#app',
+          vuetify: new Vuetify(),
+        })
+      </script>
+</body>
+</html>

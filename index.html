@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- vuetify -->
+
+    
+    <link href="./css/material-design.css" rel="stylesheet">
+    <link href="./css/vuetify.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+  <header>  <img class="logo" src="logov.jpg">
+    <center><h1> Veterinaria </h1></center>
+    <nav>
+        <ul class="men">
+            <li class="index" ><a href="#"> inicio </a> </li>
+            <li class="index2"> <a href="turno.html">pedí un turno</a></li>
+            <li class="index3"><a href="#"> productos</a></li>
+        </ul>
+    </nav></header>
+    <div id="app">
+        <v-app>
+          <v-row justify="center" align="center"> 
+            <v-col cols="4">
+              <v-card color="yellow" width="300" height="25vh"> 
+                <v-card-text class="text-center text-h6">LOGO</v-card-text>
+              </v-card>
+            </v-col>
+            <v-col cols="2">
+              <v-card color="yellow" width="300" height="25vh"> 
+                <v-card-text class="text-center text-h6">LOGO</v-card-text>
+              </v-card>
+            </v-col>
+            <v-col cols="7">
+              <v-card color="yellow" width="300" height="25vh"> 
+                <v-card-text class="text-center text-h6">LOGO</v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-app>
+    </div>
+    
+      <script src="./vue//vue.js"></script>
+      <script src="./vue/vuetify.js"></script>
+      <script>
+        new Vue({
+          el: '#app',
+          vuetify: new Vuetify(),
+        })
+      </script>
+</body>
+</html>
